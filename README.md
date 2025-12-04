@@ -47,15 +47,15 @@ Include sezioni descrittive, galleria immagini, una hero di impatto e un form co
 
 ## 📸 Screenshot dell’applicazione
 
-![Screenshot1](./images/screenshot1.png)
+![Screenshot1](./images/Screenshot1.png)
 
-![Screenshot2](./images/screenshot2.png)
+![Screenshot2](./images/Screenshot2.png)
 
-![Screenshot3](./images/screenshot3.png)
+![Screenshot3](./images/Screenshot3.png)
 
-![Screenshot4](./images/screenshot4.png)
+![Screenshot4](./images/Screenshot4.png)
 
-![Screenshot5](./images/screenshot5.png)
+![Screenshot5](./images/Screenshot5.png)
 
 
 ---
