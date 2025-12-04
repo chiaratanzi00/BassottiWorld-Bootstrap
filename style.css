@@ -1,0 +1,135 @@
+/* RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5efe6;
+   background: #f5efe6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-top: 70px; /* Evita che la navbar copra la hero */
+}
+
+
+/* HERO */
+.hero {
+  background-image: url("https://images.unsplash.com/photo-1560807707-8cc77767d783?w=1600");
+  background-size: cover;  /* Copre tutto il contenitore */
+  background-position: center;
+  min-height: 500px;
+  height: 85vh; /* 85% dell’altezza dello schermo */
+  position: relative;
+  /* centra il contenuto al centro della pagina*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Testo responsive */
+.hero-title {
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+  text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+
+/* NAVBAR */
+.nav-link {
+  position: relative; /* Necessario per animazione sottolineatura */
+}
+
+
+/* Linea bianca animata sotto le voci della navbar */
+.nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #ffc107;  /* Migliore contrasto */
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+/* Effetto sottolineatura */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+/* TITOLI */
+.section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+/* CARD */
+.card {
+  border-radius: 12px; /* Angoli arrotondati */
+}
+
+.card img {
+  border-radius: 12px 12px 0 0;
+  object-fit: cover; /* Immagini sempre proporzionate */
+}
+
+
+/* Effetto hover sulle card */
+.card-hover {
+ transition: all 0.25s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+
+/* GALLERIA */
+#galleria img {
+  transition: 0.3s;
+  object-fit: cover;
+}
+
+#galleria img:hover {
+  transform: scale(1.03);
+}
+
+
+/* Contatti */
+
+#contatti form {
+background: white;
+padding: 25px;
+border-radius: 12px;
+ box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+
+/* FOOTER */
+footer {
+  border-top: 1px solid rgba(255,255,255,0.15);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BassottiWorld</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm" aria-label="Menu principale">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">BassottiWorld</a>
+
+            <!-- Pulsante accessibile -->
+            <button class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Apri menu di navigazione">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#chi">Chi è</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#caratteristiche">Caratteristiche</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#varieta">Varietà</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galleria">Galleria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contatti">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero text-center text-white">
+        <div class="hero-content container px-3">
+            <!-- Uso clamp(): più accessibile e responsive -->
+            <h1 class="fw-bold hero-title">
+                Il mondo visto ad altezza bassotto
+            </h1>
+
+            <p class="lead fs-4">
+                Scopri caratteristiche, curiosità e varietà della razza
+            </p>
+
+            <a href="#chi" class="btn btn-warning btn-lg mt-3">Scopri di più</a>
+        </div>
+    </header>
+
+
+    <!-- CHI È -->
+    <section class="container py-5" id="chi">
+        <h2 class="section-title text-center mb-4">Chi è il Bassotto?</h2>
+
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <p>
+                    Il Bassotto (Dachshund) è una razza vivace, intelligente e molto affettuosa, 
+                    nota per il suo corpo lungo e le zampe corte. Oggi è un compagno adorabile 
+                    e sorprendentemente coraggioso.
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="images/bassotto00.avif" 
+                     class="img-fluid rounded shadow-sm" 
+                     alt="Bassotto marrone seduto su un prato">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CARATTERISTICHE -->
+    <section class="container py-5" id="caratteristiche">
+        <h2 class="section-title text-center mb-5">Caratteristiche</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Temperamento</h5>
+                        <p>Affettuoso, fedele, curioso e vivace. Ama stare con la famiglia.</p>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Cura & Salute</h5>
+                        <p>Attenzione alla schiena, peso sotto controllo e attività regolare.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm card-hover">
+                    <div class="card-body">
+                        <h5 class="card-title">Alimentazione</h5>
+                        <p>Dieta equilibrata, ricca di proteine e povera di grassi.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- VARIETÀ -->
+    <section class="container py-5" id="varieta">
+        <h2 class="section-title text-center mb-5">Varietà della Razza</h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 card-hover">
+                    <img src="images/bassotto03.avif" 
+                         class="card-img-top" 
+                         alt="Bassotto a pelo corto, color marrone">
+                    <div class="card-body">
+                        <h5>Pelo Corto</h5>
+                        <p>Elegante, muscoloso, semplice da curare.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 card-hover">
+                    <img src="images/bassotto02.avif" 
+                         class="card-img-top"
+                         alt="Bassotto a pelo lungo">
+                    <div class="card-body">
+                        <h5>Pelo Lungo</h5>
+                        <p>Dolce, morbido, affettuoso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 card-hover">
+                    <img src="images/bassotto04.jpg" 
+                         class="card-img-top"
+                         alt="Bassotto a pelo ruvido">
+                    <div class="card-body">
+                        <h5>Pelo Ruvido</h5>
+                        <p>Vivace, energico e simpatico.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- GALLERIA -->
+    <section class="container py-5" id="galleria">
+        <h2 class="section-title text-center mb-4">Galleria</h2>
+
+        <div class="row g-3">
+            <div class="col-6 col-md-4">
+                <img src="images/bassotto01.jpg" class="img-fluid rounded shadow-sm" alt="Bassotto cucciolo">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="images/bassotto05.avif" class="img-fluid rounded shadow-sm" alt="Bassotto nero">
+            </div>
+            <div class="col-6 col-md-4">
+                <img src="images/bassotto06.avif" class="img-fluid rounded shadow-sm" alt="Bassotto che corre sull'erba">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTATTI -->
+    <section class="container py-5" id="contatti">
+    <h2 class="section-title text-center mb-5">Contatti</h2>
+    <p class="lead text-center mb-4">Scrivimi per informazioni o curiosità!</p>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form aria-label="Modulo di contatto">
+
+                <label class="form-label">Nome</label>
+                <input class="form-control mb-3" name="nome" placeholder="Inserisci il tuo nome" required>
+
+                <label class="form-label">Email</label>
+                <input class="form-control mb-3" name="email" type="email" placeholder="Inserisci la tua email" required>
+
+                <label class="form-label">Messaggio</label>
+                <textarea class="form-control mb-3" name="messaggio" rows="5" placeholder="Scrivi qui..." required></textarea>
+
+                <button class="btn btn-primary w-100">Invia Messaggio</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 BassottiWorld — Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
